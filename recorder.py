@@ -33,7 +33,7 @@ class Recorder(threading.Thread):
         "Уменьшить отступ": 15,
     }
     idx_to_class = {v: k for k, v in class_to_idx.items()}
-    model_path = "AtRNN/best.pth"
+    model_path = "best.pth"
     sample_rate = 16000
     max_length = 48000
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
